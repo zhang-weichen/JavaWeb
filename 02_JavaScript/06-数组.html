@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-数组</title>
+    <script type="text/javascript">
+        var arr = [];  // 定义一个空数组
+        alert(arr.length);
+
+        arr[0] = 123;
+        alert(arr[0]);
+
+        alert(arr.length);
+
+        // JS中的数组，随着我们通过下标赋值自动扩容
+        arr[2] = "abc";
+        alert(arr[2]);
+
+        // alert(arr[10]);  // 读操作不会自动扩容
+
+        alert(arr.length);
+        alert(arr[1]);  // undefined
+
+        // 数组的遍历
+        for (var i = 0; i < arr.length; i++) {
+            alert(arr[i]);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

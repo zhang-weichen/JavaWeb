@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10.表单的显示</title>
+</head>
+<body>
+<!--需求 1:创建一个个人信息注册的表单界面。包含用户名，密码，确认密码。性别（单选），兴趣爱好（多选），国籍（下 拉列表）。
+    隐藏域，自我评价（多行文本域）。重置，提交。-->
+
+    <!--
+        form标签：表单标签
+            input标签：单行输入框标签
+                type属性：设置输入框内容的类别属性
+                    text：输入框的输入内容为普通文本
+                    password：输入框的输入内容为密码
+                    radio：单选框
+                    checkbox：复选框
+                    reset：重置按钮，重置页面内的输入内容，默认显示为“重置”，可通过value属性修改
+                    submit：提交按钮，提交页面内的输入内容，默认显示为“重置”，可通过value属性修改
+                    button：按钮，可通过value属性修改按钮上的文本
+                    file：文件上传域
+                    hidden：隐藏域，当我们要发送某些信息，而这些信息不需要用户的参与，供程序使用，就可以使用隐藏域（提交的同时发送给服务器）
+                name属性：设置分组，同一组内单选只可选中一个选项
+                checked属性：设置是否默认选中
+                    checked：默认选中
+                value属性：设置输入框的默认显示内容
+
+            select标签：下拉列表框
+                option标签：设置下拉选项
+                    selected属性：设置默认选项
+                        selected：设置此项为默认选中的项
+
+            textarea标签：多行文本输入框，开始标签和结束标签之间的内容为默认值
+                rows属性：设置显示区域的行高
+                cols属性：设置每行显示的字符宽度
+
+            使用table使表单内容整齐易读
+    -->
+
+    <form>
+        <h1 align="center">用户注册</h1>
+        <table align="center">
+            <tr>
+                <td>用户名称：</td>
+                <td>
+                    <input type="text" value="默认值"/>
+                </td>
+            </tr>
+            <tr>
+                <td>用户密码：</td>
+                <td>
+                    <input type="password" value="123456"/>
+                </td>
+            </tr>
+            <tr>
+                <td>确认密码：</td>
+                <td>
+                    <input type="password" />
+                </td>
+            </tr>
+            <tr>
+                <td>性别：</td>
+                <td>
+                    <input type="radio" name="sex" checked="checked"/>男
+                    <input type="radio" name="sex"/>女
+                </td>
+            </tr>
+            <tr>
+                <td> 兴趣爱好：</td>
+                <td>
+                    <input type="checkbox"/>C++
+                    <input type="checkbox"/>Java
+                    <input type="checkbox"/>Python
+                </td>
+            </tr>
+            <tr>
+                <td>国籍：</td>
+                <td>
+                    <select>
+                        <option>--请选择国籍--</option>
+                        <option selected="selected">中国</option>
+                        <option>美国</option>
+                        <option>英国</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>自我评价：</td>
+                <td>
+                    <textarea rows="10" cols="20">默认值</textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>照片：</td>
+                <td>
+                    <input type="file"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="hidden"/>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="reset" value="reset"/>
+                </td>
+                <td align="center">
+                    <input type="submit" value="submit"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

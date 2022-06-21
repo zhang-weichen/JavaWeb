@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2.特殊字符.html</title>
+</head>
+<body>
+	
+	<!-- 特殊字符
+	需求 1：把 <br> 换行标签 变成文本 转换成字符显示在页面上
+
+	常用的特殊字符：
+	<：&lt;(less than)
+	>：&gt;(greater than)
+	空格：&nbsp;
+	-->
+	我是<br>标签<!-- 浏览器将<br>解析为换行，无法显示出<br> -->
+	<br/>
+	我是&lt;br&gt;标签
+	<br/>
+	我是    空格<!-- 连续的空白字符（空格，换行，制表等）只识别为单个空格 -->
+	<br/>
+	我是&nbsp;&nbsp;&nbsp;&nbsp;空格<!-- 连续的空白字符使用多个特殊字符&nbsp;实现 -->
+	
+</body>
+</html>

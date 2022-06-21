@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>05-逻辑运算</title>
+    <script type="text/javascript">
+
+        var a;
+
+        a = 0;
+        if(a) {
+            alert("0为true")
+        } else {
+            alert("0为false")
+        }
+
+        a = "";
+        if(a) {
+            alert("\"\"为true")
+        } else {
+            alert("\"\"为false")
+        }
+
+        a = null;
+        if(a) {
+            alert("null为true")
+        } else {
+            alert("null为false")
+        }
+
+        a = undefined;
+        if(a) {
+            alert("undefined为true")
+        } else {
+            alert("undefined为false")
+        }
+
+        /*
+        && 且运算。
+        有两种情况：
+        第一种：运算结果为真时，返回后一个表达式的值。
+        第二种：运算结果为假时，返回第一个值为假的表达式的值
+
+        || 或运算
+        第一种情况：运算结果为假时，返回后一个表达式的值
+        第二种情况：运算结果为真时，返回第一个值为真的表达式的值
+        并且 && 与运算 和 ||或运算 有短路。
+        */
+
+        var b = 123
+        var c = "abc";
+
+        var d = null;
+        var e = 0;
+
+        alert( b && c);  // abc
+        alert( b && d);  // null
+        alert( d || e);  // 0
+        alert( b || c);  // 123
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
