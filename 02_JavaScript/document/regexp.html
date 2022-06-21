@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        // 检查字符串中是否包含字母e
+        // var patt = new RegExp("e");
+        // var patt = /e/;  // 也是正则表达式对象
+
+        // 检查字符串中是否包含字母a或b或c
+        // var patt = /[abc]/;
+
+        // 检查字符串中是否包含任意小写字母
+        // var patt = /[a-z]/;
+
+        // 检查字符串中是否包含任意大写字母
+        // var patt = /[A-Z]/;
+
+        // 检查字符串中是否包含任意数字
+        // var patt = /[0-9]/;
+
+        // 检查字符串中是否包含字母、数字、下划线
+        // var patt = /\w/;
+
+        // 检查字符串中是否包含至少一个a
+        // var patt = /a+/;
+
+        // 检查字符串中是否包含0个或多个a
+        // var patt = /a*/;
+
+        // 检查字符串中是否包含0个或1个a
+        // var patt = /a?/;
+
+        // 检查字符串中是否包含连续3个a
+        // var patt = /a{3}/;
+
+        // 检查字符串中是否包含连续3-5个a
+        // var patt = /a{3,5}/;
+
+        // 检查字符串中是否包含至少连续3个a
+        // var patt = /a{3,}/;
+
+        // 检查字符串是否以a结尾
+        // var patt = /a$/;
+
+        // 检查字符串是否以a开头
+        // var patt = /^a/;
+
+        // 检查字符串中是否包含连续3-5个a
+        // var patt = /a{3,5}/;
+
+        // 问题：var patt = /a{3,5}/；最大值什么时候有用
+        // 要求字符串必须从头到尾完全匹配
+        var patt = /^a{3,5}$/;
+
+        var str = "aaaaaa";
+
+        alert(patt.test(str));
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
