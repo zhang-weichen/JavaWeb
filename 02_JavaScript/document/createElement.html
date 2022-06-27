@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            // 使用js代码创建html标签，并显示在页面上
+            var divObj = document.createElement("div");  // 在内存中<div></div>
+            divObj.innerHTML = "Hello, world!";  // <div>Hello, world!</div>，还只是在内存中
+
+            // 在内存中
+            // var bodyObj = document.getElementsByTagName("body");
+            // bodyObj.appendChild(divObj);
+            document.body.appendChild(divObj);
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
